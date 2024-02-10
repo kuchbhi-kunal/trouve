@@ -16,7 +16,8 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(0, 0%, 81%);
+  --first-color: #CFD4D7;
+  /* --first-color: #cfcfcf; */
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
   --title-color: hsl(0, 0%, 15%);
@@ -315,7 +316,8 @@ body.dark-theme {
 }
 
 .home__img {
-  width: 240px;
+  width: 450px;
+  margin-bottom: 3rem;
 }
 
 .home__img-bg {
@@ -1149,7 +1151,8 @@ body.dark-theme {
     height: 680px;
   }
   .home__img {
-    width: 420px;
+    width: 520px;
+    margin-bottom: 4.5rem;
   }
   .home__social {
     left: -6rem;
