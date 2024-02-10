@@ -742,31 +742,31 @@ body.dark-theme {
   margin-bottom: var(--mb-1-5);
 }
 
-/*=============== NEWSLETTER ===============*/
-.newsletter__bg {
+/*=============== questions ===============*/
+.questions__bg {
   background-color: var(--first-color);
   padding: 3rem 1.5rem;
   text-align: center;
   row-gap: 2.5rem;
 }
 
-.newsletter__title {
+.questions__title {
   font-size: var(--h1-font-size);
   color: hsl(0, 0%, 15%);
   margin-bottom: var(--mb-1-5);
 }
 
-.newsletter__description {
+.questions__description {
   color: hsl(0, 0%, 35%);
 }
 
-.newsletter__subscribe {
+.questions__subscribe {
   display: flex;
   flex-direction: column;
   row-gap: .75rem;
 }
 
-.newsletter__input {
+.questions__input {
   border: none;
   outline: none;
   background-color: hsl(0, 0%, 94%);
@@ -1085,7 +1085,7 @@ body.dark-theme {
 
   .story__container,
   .testimonial__container,
-  .newsletter__bg {
+  .questions__bg {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -1112,15 +1112,15 @@ body.dark-theme {
     height: 155px;
   }
 
-  .newsletter__bg {
+  .questions__bg {
     text-align: initial;
     column-gap: 2rem;
     padding: 4.5rem;
   }
-  .newsletter__subscribe {
+  .questions__subscribe {
     flex-direction: column;
   }
-  .newsletter__input {
+  .questions__input {
     width: 100%;
   }
 
