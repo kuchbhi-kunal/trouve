@@ -1136,6 +1136,11 @@ body.dark-theme {
     font-size: var(--h2-font-size);
   }
 
+  .swipeformore{
+    display: none;
+  }
+
+
   .home__container {
     column-gap: 2rem;
   }
