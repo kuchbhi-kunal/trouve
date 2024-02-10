@@ -708,7 +708,7 @@ body.dark-theme {
 
 .new__price {
   display: block;
-  color: var(--first-color);
+  color: #828282;
   transition: .3s;
 }
 
