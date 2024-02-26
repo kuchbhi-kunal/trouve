@@ -98,6 +98,7 @@ h1, h2, h3, h4 {
   font-weight: var(--font-medium);
 }
 
+
 ul {
   list-style: none;
 }
@@ -1162,7 +1163,7 @@ body.dark-theme {
   }
 
   .featured__container {
-    grid-template-columns: repeat(3, 312px);
+    grid-template-columns: repeat(4, 312px);
     padding-top: 2rem;
   }
   

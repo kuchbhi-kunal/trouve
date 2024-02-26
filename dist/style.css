@@ -1,0 +1,153 @@
+@font-face {
+    font-family: DomaineDisp;
+    font-weight: normal;
+    src: url(https://cdn.statically.io/gh/AlainBarrios/Fonts/b41a05199c312e4fada6cf977d40d76f2534e306/DomaineDisp-Regular.otf?raw=true);
+}
+
+@font-face {
+    font-family: DomaineDisp;
+    font-weight: 600;
+    src: url(https://cdn.statically.io/gh/AlainBarrios/Fonts/b41a05199c312e4fada6cf977d40d76f2534e306/DomaineDisp-Semibold.otf?raw=true);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+:root{
+  --ratio:  9 / 16;
+  --font-size: calc(7vmin * var(--ratio));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  -webkit-text-size-adjust: 100%;
+}
+
+html{
+  font-size: var(--font-size);  
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img, video{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(26, 26, 26);
+}
+
+.navbar-main{
+  background-color: rgba(245, 245, 245, 1);
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: DomaineDisp;
+  display: grid;
+  grid-template-areas: "center";
+  transition: background .3s linear;
+}
+
+.list-items__navbar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: calc(50vh - 1.5rem / 2);
+  grid-area: center;
+  position: relative;
+  z-index: 10;
+}
+
+.item__navbar{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item__navbar a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.item__navbar span:nth-child(1){
+  margin-bottom: 15px;
+  letter-spacing: .1rem;
+}
+
+.item__navbar span:nth-child(2){
+  font-size: .65rem;
+  font-family: 'Hind', sans-serif;
+  font-weight: 200;
+  letter-spacing: .35rem
+}
+
+.video-group{
+  grid-area: center;
+  position: relative; 
+}
+
+.video__item{
+  width: 30%;
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.video__item:nth-child(1){
+  top: 5vh;
+  left: 15vw;
+}
+
+.video__item:nth-child(2){
+  top: 10vh;
+  left: calc(50vw);
+  transform: translatex(-50%);
+}
+
+.video__item:nth-child(3){
+  top: 8vh;
+  left: calc(100vw - 30% - 150px);
+}
+
+.video__item:nth-child(4){
+  top: 30vh;
+  left: 15vw;
+}
+
+.video__item:nth-child(5){
+  top: 35vh;
+  left: calc(50vw);
+  transform: translatex(-50%);
+}
+
+.video__item:nth-child(6){
+  top: 25vh;
+  left: calc(100vw - 30% - 150px);
+}
+
+.video__item:nth-child(7){
+  top: 45vh;
+  left: 15vw;
+}
+
+.video__item:nth-child(8){
+  top: 50vh;
+  left: calc(100vw - 30% - 150px);
+}
