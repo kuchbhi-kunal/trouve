@@ -145,3 +145,28 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Video Play button
+
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('myVideo');
+    var playButton = document.getElementById('playButton');
+  
+    playButton.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        playButton.style.display = 'none';
+      } else {
+        video.pause();
+      }
+    });
+  
+    video.addEventListener('play', function() {
+      playButton.style.display = 'none';
+    });
+  
+    video.addEventListener('pause', function() {
+      playButton.style.display = 'block';
+    });
+  });
+  
